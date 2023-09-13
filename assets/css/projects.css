@@ -1,0 +1,39 @@
+.projectBtn{
+	    background: #fe0000;
+    border: 1px solid #fe0000;
+    margin-top: 12px;
+    padding: 8px 22px 8px 22px;
+    font-size: 16px;
+    border-radius: 7px;
+}
+.projectBtn:hover{
+	background: white;
+	border: 1px solid red;
+	color: red; 
+}
+.portfolio-item-thumbnail + .portfolio-item-description{
+	margin: 20px 0 20px !important;
+}
+h5{
+	font-weight: 400 !important;
+    font-size: 16px !important;
+}
+.box a {
+	text-decoration: underline !important;
+}
+ .redClr{
+	color: red;
+}
+.box{
+	    padding: 25px;
+    background-color: #f8f9fa;
+}
+.space20{
+	height: 20px;
+}
+.redClr{
+	color: #fe0000;
+}
+.mt-10{
+	margin-top: 15px;
+}

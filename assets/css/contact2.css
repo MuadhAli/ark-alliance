@@ -1,0 +1,79 @@
+
+
+.test {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.test .test-overlay {
+background: #000000c2;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  
+}
+
+.test:hover .test-overlay{
+  opacity: 1;
+}
+
+.test-image{
+  width: 100%;
+}
+
+.test-details {
+  position: absolute;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.test:hover .test-details{
+    left: 50%;
+    opacity: 1;
+}
+
+.test-details h5{
+  color: #fff;
+  font-family: "DIN_bold";
+}
+
+.test-details p{
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.test-details p:hover{
+  color: red;
+}
+.space7{
+  height: 7px;
+}
+
+
+.tooltip {
+  font-family: "DIN_light";
+  font-size: 13px;
+
+}

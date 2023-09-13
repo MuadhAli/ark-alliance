@@ -1,0 +1,1279 @@
+#contactUs ul li span:nth-of-type(2){
+    margin-left: 15px;
+    font-family: "DIN_bold";
+}
+.displayFlex{
+    display: inline-flex !important;
+}
+
+.redClr{
+    color: #e00000;
+}
+
+.blackClr{
+    background: black !important;
+}
+.black:after{
+    background: #00000059 !important;
+}
+.black-pin, .black-pin:after{
+    background-color: black!important;
+
+}
+@media (max-width: 991px)
+{
+   .page-section {
+    padding-top: 25px;
+    padding-bottom: 35px;
+} 
+}
+.section-center, .section-center .actions {
+    text-align: center;
+}
+
+/*.page-section {
+    padding-top: 48px;
+    padding-bottom: 55px;
+    border-bottom: 1px solid #edeff2;
+}*/
+
+/*.section-dark {
+    border: none;
+    background: #303C46;
+    background: linear-gradient(225deg, #39444d , #22292e 88%);
+    background-image: -ms-linear-gradient(225deg, #39444d , #22292e 88%);
+    background-image: -moz-linear-gradient(225deg, #39444d , #22292e 88%);
+    background-image: -o-linear-gradient(225deg, #39444d , #22292e 88%);
+    background-image: -webkit-linear-gradient(225deg, #39444d , #22292e 88%);
+    background-image: linear-gradient(225deg, #39444d , #22292e 88%);
+}*/
+.section-dark .section-title, .section-blue .section-title {
+    text-align: center;
+
+}
+
+.location-map {
+    position: relative;
+}
+.location-map .mapp {
+    background: url("../../../images/backgrounds/mapBlue.svg") no-repeat center center;
+    background-size: cover;
+}
+.location-map .mapp-grey {
+    background: url("../../../images/backgrounds/map-grey.svg") no-repeat center center;
+    background-size: cover;
+}
+.location-container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+/*.section-dark .location-map .mapp {
+    opacity: 0.3;
+}*/
+
+/* 3.8 Section: Map */
+
+/* 3.8.1 Map: Large */
+
+.location-map-sm {
+    height: 260px;
+}
+.location-map-sm .location-container {
+    height: 260px;
+    width: 524px;
+    margin: -130px 0 0 -262px;
+}
+.location-map-sm .mapp {
+    height: 260px;
+    width: 524px;
+}
+.location-map-sm .location-name {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all ease .15s;
+    transition: all ease .15s;
+    -webkit-transform: scale(0.65);
+    transform: scale(0.65);
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+}
+.location-map-sm .location:hover {
+    z-index: 1000;
+}
+.location-map-sm .location:hover .location-name {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+@media (max-width: 991px) {
+    .location-map-sm {
+        height: 170px;
+    }
+    .location-map-sm .location-container {
+        -webkit-transform: scale(0.65);
+        transform: scale(0.65);
+    }
+}
+
+/* 3.8.2 Map: Large */
+
+.location-map-lg .mapp {
+    height: 580px;
+    width: 1174px;
+}
+@media (min-width: 568px) {
+    .location-map-lg {
+        height: 520px;
+    }
+    .location-map-lg .location-container {
+        height: 580px;
+        width: 1174px;
+        margin: -200px 0 0 -582px;
+    }
+    .location-map .actions {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+@media (min-width: 568px) and (max-width: 1199px) {
+    .location-map-lg {
+        height: 450px;
+    }
+    .location-map-lg .location-container {
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+@media (min-width: 568px) and (max-width: 991px) {
+    .location-map-lg {
+        height: 424px;
+    }
+    .location-map-lg .location-container {
+        -webkit-transform: scale(0.68);
+        -moz-transform: scale(0.68);
+        -ms-transform: scale(0.68);
+        -o-transform: scale(0.68);
+        transform: scale(0.68);
+    }
+}
+@media (min-width: 568px) and (max-width: 767px) {
+
+    .location-map-lg {
+        height: 290px;
+    }
+    .location-map-lg .location-container {
+        -webkit-transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+        -o-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+}
+@media (max-width: 568px)
+{
+    .section-dark {
+    border: none;
+    background: #303C46;
+    background: linear-gradient(225deg, #39444d , #22292e 88%);
+    background-image: -ms-linear-gradient(225deg, #39444d , #22292e 88%);
+    background-image: -moz-linear-gradient(225deg, #39444d , #22292e 88%);
+    background-image: -o-linear-gradient(225deg, #39444d , #22292e 88%);
+    background-image: -webkit-linear-gradient(225deg, #39444d , #22292e 88%);
+    background-image: linear-gradient(225deg, #39444d , #22292e 88%);
+}
+ .section-title
+{
+    color: #fff;
+}
+}
+@media (max-width: 567px) {
+    .location-map-lg .mapp {
+        display: none;
+    }
+    .location-map-lg .location-container {
+        position: inherit;
+        top: auto;
+        left: auto;
+        max-width: 380px;
+        margin: 0 auto;
+        padding: 25px 0;
+    }
+    .location-container:after,
+    .location-container:before {
+        display: block;
+        content: "";
+        clear: both;
+    }
+    .location-map-lg .location-map {
+        padding: 0 30px;
+    }
+}
+
+/* 3.8.3 Map: Pin */
+
+.location-pin,
+.location-pin:after {
+    background-color: #ce0000;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.location-pin {
+    position: relative;
+    z-index: 999;
+    display: block;
+    height: 12px;
+    width: 12px;
+}
+.location-pin-lg {
+    position: relative;
+    display: block;
+    height: 20px;
+    width: 20px;
+}
+.location-pin:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    content: "";
+    height: 22px;
+    width: 22px;
+    margin: -11px 0 0 -11px;
+    -webkit-animation: pulsate 2s linear;
+  animation: pulsate 2s linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.location-pin-lg:after {
+    height: 40px;
+    width: 40px;
+    margin: -20px 0 0 -20px;
+}
+.location-map-sm .location {
+    height: 8px;
+    width: 8px;
+    cursor: pointer;
+}
+.location-map-sm .location-pin {
+    height: 8px;
+    width: 8px;
+}
+.location-map-sm .location-pin:after {
+    height: 16px;
+    width: 16px;
+    margin: -8px 0 0 -8px;
+}
+
+@-webkit-keyframes pulsate{
+  0% {
+      -webkit-transform: scale(0);
+      opacity: .05;
+  }
+  20% {
+      -webkit-transform: scale(1.7);
+      opacity: .1;
+  }
+  40% {
+      -webkit-transform: scale(1.9);
+      opacity: .15;
+  }
+/*  45% {
+      -webkit-transform: scale(2.1);
+      opacity: .3;
+  }*/
+  100% {
+      -webkit-transform: scale(2.4);
+      opacity: 0;
+  }
+}
+/*@keyframes pulsate{
+  0% {
+      transform: scale(0);
+      opacity: .05;
+  }
+  20% {
+      transform: scale(1.7);
+      opacity: .1;
+  }
+  40% {
+      transform: scale(2.9);
+      opacity: .2;
+  }
+  60% {
+      transform: scale(3.1);
+      opacity: .3;
+  }
+  100% {
+      transform: scale(4.4);
+      opacity: 0;
+  }
+}*/
+
+/* 3.8.3 Map: Locations */
+
+.location {
+    position: absolute;
+    z-index: 998;
+    height: 12px;
+    width: 12px;
+}
+.location-name {
+    position: absolute;
+    z-index: 999;
+    display: block;
+    height: 28px;
+}
+.location-name span {
+        display: block;
+    height: 28px;
+    padding: 0 10px;
+    background-color: #ce0000;
+    color: #fff;
+    font-size: 14px;
+    line-height: 26px;
+    white-space: nowrap;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 5px 20px -5px rgba(11,27,38, 0.2);
+    box-shadow: 0 5px 20px -5px rgba(11,27,38, 0.2);
+
+}
+.location-name:after {
+    position: absolute;
+  z-index: -1;
+    display: block;
+    content: "";
+    height: 1px;
+    width: 20px;
+    background-color: #ce00006b;
+}
+.location-map-grey .location-name:after {
+  background-color: #c4cacc;
+}
+.location-seattle {
+    top: 180px;
+    left: 150px;
+}
+.location-seattle .location-name {
+    bottom: 44px;
+    right: 44px;
+}
+.location-seattle .location-name:after {
+    bottom: -20px;
+    right: -49px;
+    width: 58px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.location-map-sm .location-seattle {
+    top: 84px;
+    left: 66px;
+}
+.location-morocco {
+       top: 232px;
+    left: 503px;
+}
+.location-morocco .location-name {
+    top: 35px;
+    right: 37px;
+}
+.location-morocco .location-name:after {
+    top: -10px;
+    right: -35px;
+    width: 50px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.location-map-sm .location-morocco {
+    top: 100px;
+    left: 64px;
+}
+
+
+.location-Senegal {
+         top: 291px;
+    left: 497px;
+}
+.location-Senegal .location-name {
+    top: 35px;
+    right: 37px;
+}
+.location-Senegal .location-name:after {
+    top: -10px;
+    right: -35px;
+    width: 50px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.location-map-sm .location-Senegal {
+    top: 100px;
+    left: 64px;
+}
+
+
+.location-Gabon {
+       top: 323px;
+    left: 552px;
+}
+.location-Gabon .location-name {
+    top: 35px;
+    right: 37px;
+}
+.location-Gabon .location-name:after {
+    top: -10px;
+    right: -35px;
+    width: 50px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.location-map-sm .location-Gabon {
+    top: 100px;
+    left: 64px;
+}
+
+.location-egypt {
+      top: 232px;
+    right: 534px;
+}
+.location-egypt .location-name {
+    top: 35px;
+    right: 37px;
+}
+.location-egypt .location-name:after {
+    top: -10px;
+    right: -35px;
+    width: 50px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.location-map-sm .location-egypt {
+    top: 100px;
+    left: 64px;
+}
+.location-congo {
+    top: 397px;
+    left: 606px;
+}
+.location-congo .location-name {
+    top: 78px;
+    right: -24px;
+}
+.location-congo .location-name:after {
+    left: 50%;
+    top: -70px;
+    height: 70px;
+    width: 1px;
+}
+.location-map-sm .location-congo {
+    top: 108px;
+    left: 72px;
+}
+
+.location-djibouti {
+    top: 289px;
+    right: 496px;
+}
+.location-djibouti .location-name {
+          top: 35px;
+    right: 33px;
+}
+.location-djibouti .location-name:after {
+          top: -10px;
+    right: -35px;
+    width: 50px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.location-map-sm .location-djibouti {
+    top: 108px;
+    left: 72px;
+}
+.location-jebelAli {
+      top: 251px;
+    right: 445px;
+}
+.location-jebelAli .location-name {
+       bottom: 124px;
+    right: -113px;
+}
+.location-jebelAli .location-name:after {
+    left: 51%;
+    bottom: -114px;
+    height: 116px;
+    width: 1px;
+}
+.location-map-sm .location-jebelAli {
+    top: 106px;
+    left: 98px;
+}
+
+
+
+.location-Bahrain {
+         top: 237px;
+    right: 481px;
+}
+.location-Bahrain .location-name {
+      bottom: 59px;
+    right: -27px;
+}
+.location-Bahrain .location-name:after {
+    left: 51%;
+    bottom: -56px;
+    height: 60px;
+    width: 1px;
+}
+.location-map-sm .location-Bahrain {
+    top: 106px;
+    left: 98px;
+}
+.location-miami {
+    top: 265px;
+    left: 288px;
+}
+.location-miami .location-name {
+    top: 29px;
+    left: 30px;
+}
+.location-miami .location-name:after {
+    top: -10px;
+    left: -30px;
+    width: 40px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.location-map-sm .location-miami {
+    top: 120px;
+    left: 126px;
+}
+.location-atlanta {
+    top: 234px;
+    left: 276px;
+}
+.location-atlanta .location-name {
+    top: -9px;
+    left: 110px;
+}
+.location-atlanta .location-name:after {
+    top: 50%;
+    left: -100px;
+    width: 100px;
+}
+.location-map-sm .location-atlanta {
+    top: 108px;
+    left: 126px;
+}
+.location-new-jersey {
+    top: 210px;
+    left: 300px;
+}
+.location-new-jersey .location-name {
+    bottom: 28px;
+    left: 28px;
+}
+.location-new-jersey .location-name:after {
+    bottom: -10px;
+    left: -24px;
+    width: 30px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.location-map-sm .location-new-jersey {
+    top: 98px;
+    left: 132px;
+}
+.location-chicago {
+    top: 200px;
+    left: 267px;
+}
+.location-chicago .location-name {
+    bottom: 70px;
+    left: 70px;
+}
+.location-chicago .location-name:after {
+    bottom: -31px;
+    left: -75px;
+    width: 90px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.location-map-sm .location-chicago {
+    top: 90px;
+    left: 116px;
+}
+.location-saudia {
+       top: 214px;
+    right: 490px;
+}
+.location-saudia .location-name {
+   bottom: 45px;
+    right: 46px;
+}
+.location-saudia .location-name:after {
+    bottom: -18px;
+    right: -49px;
+    width: 63px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.location-map-sm .location-saudia {
+    top: 62px;
+    left: 232px;
+}
+
+
+.location-Jordan {
+          top: 246px;
+    right: 500px;
+}
+.location-Jordan .location-name {
+   bottom: 45px;
+    right: 46px;
+}
+.location-Jordan .location-name:after {
+    bottom: -18px;
+    right: -49px;
+    width: 63px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.location-map-sm .location-Jordan {
+    top: 62px;
+    left: 232px;
+}
+
+
+
+
+.location-UK {
+         top: 118px;
+    right: 658px;
+}
+.location-UK .location-name {
+   bottom: 45px;
+    right: 46px;
+}
+.location-UK .location-name:after {
+    bottom: -18px;
+    right: -49px;
+    width: 63px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.location-map-sm .location-UK {
+    top: 62px;
+    left: 232px;
+}
+
+
+.location-Netherlands {
+             top: 129px;
+    right: 617px;
+}
+.location-Netherlands .location-name {
+  bottom: 89px;
+    right: -41px;
+}
+.location-Netherlands .location-name:after {
+          left: 51%;
+    height: 81px;
+    width: 1px;
+}
+.location-map-sm .location-Netherlands {
+    top: 62px;
+    left: 232px;
+}
+
+
+.location-Algeria {
+     top: 216px;
+    right: 639px;
+}
+.location-Algeria .location-name {
+   bottom: 45px;
+    right: 46px;
+}
+.location-Algeria .location-name:after {
+    bottom: -18px;
+    right: -49px;
+    width: 63px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.location-map-sm .location-Algeria {
+    top: 62px;
+    left: 232px;
+}
+
+
+
+.location-Mauritania {
+       top: 246px;
+    right: 687px;
+}
+.location-Mauritania .location-name {
+   bottom: 45px;
+    right: 46px;
+}
+.location-Mauritania .location-name:after {
+    bottom: -18px;
+    right: -49px;
+    width: 63px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.location-map-sm .location-Mauritania {
+    top: 62px;
+    left: 232px;
+}
+
+
+
+.location-Johannesburg {
+     bottom: 135px;
+    right: 570px;
+}
+.location-Johannesburg .location-name {
+   bottom: -9px;
+    right: 51px;
+}
+.location-Johannesburg .location-name:after {
+   bottom: 14px;
+    right: -49px;
+    width: 63px;
+}
+.location-map-sm .location-Johannesburg {
+    top: 62px;
+    left: 232px;
+}
+
+.location-Burundi {
+         bottom: 201px;
+    right: 570px;
+}
+.location-Burundi .location-name {
+           bottom: -41px;
+    right: 34px;
+}
+.location-Burundi .location-name:after {
+       bottom: 24px;
+    right: -33px;
+    width: 75px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-36deg);
+}
+.location-map-sm .location-Burundi {
+    top: 62px;
+    left: 232px;
+}
+
+.location-kuwait {
+    top: 237px;
+    right: 435px;
+}
+.location-kuwait .location-name {
+    bottom: 73px;
+    left: 73px;
+}
+.location-kuwait .location-name:after {
+    bottom: -32px;
+    left: -78px;
+    width: 95px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.location-map-sm .location-kuwait {
+    top: 60px;
+    left: 242px;
+}
+.location-oman {
+        top: 268px;
+    right: 450px;
+}
+.location-oman .location-name {
+        top: 25px;
+    left: 50px;
+}
+.location-oman .location-name:after {
+        top: -8px;
+    left: -52px;
+    width: 65px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(25deg);
+}
+.location-map-sm .location-oman {
+    top: 70px;
+    left: 240px;
+}
+
+.location-kenya {
+           top: 314px;
+    right: 482px;
+}
+.location-kenya .location-name {
+        top: 16px;
+    left: 50px;
+}
+.location-kenya .location-name:after {
+        top: -2px;
+    left: -45px;
+    width: 65px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(15deg);
+}
+.location-map-sm .location-kenya {
+    top: 70px;
+    left: 240px;
+}
+
+
+
+.location-Uganda {
+      top: 323px;
+    right: 500px;
+}
+.location-Uganda .location-name {
+    top: 50px;
+    left: 50px;
+}
+.location-Uganda .location-name:after {
+       top: -20px;
+    left: -52px;
+    width: 65px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.location-map-sm .location-Uganda {
+    top: 70px;
+    left: 240px;
+}
+
+
+
+
+.location-Tanzania {
+          top: 355px;
+    right: 504px;
+}
+.location-Tanzania .location-name {
+    top: 50px;
+    left: 50px;
+}
+.location-Tanzania .location-name:after {
+    top: -20px;
+    left: -52px;
+    width: 65px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.location-map-sm .location-Tanzania {
+    top: 70px;
+    left: 240px;
+}
+
+
+.location-Zimbabwe {
+        top: 383px;
+    right: 517px;
+}
+.location-Zimbabwe .location-name {
+        top: 68px;
+    left: 69px;
+}
+.location-Zimbabwe .location-name:after {
+      top: -20px;
+    left: -75px;
+    width: 110px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.location-map-sm .location-Zimbabwe {
+    top: 70px;
+    left: 240px;
+}
+
+
+.location-zambia {
+       top: 400px;
+    right: 524px;
+}
+.location-zambia .location-name {
+    top: 45px;
+    left: -10px;
+}
+.location-zambia .location-name:after {
+        top: -10px;
+    left: -5px;
+    width: 69px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(65deg);
+}
+.location-map-sm .location-zambia {
+    top: 70px;
+    left: 240px;
+}
+.location-dubai {
+    top: 251px;
+    right: 445px;
+}
+.location-dubai .location-name {
+    top: -9px;
+    left: 60px;
+}
+.location-dubai .location-name:after {
+    top: 50%;
+    left: -60px;
+    width: 60px;
+}
+.location-map-sm .location-dubai {
+    top: 66px;
+    left: 250px;
+}
+.location-tokyo {
+    top: 201px;
+    right: 162px;
+}
+.location-tokyo .location-name {
+    bottom: 50px;
+    left: 50px;
+}
+.location-tokyo .location-name:after {
+    bottom: -22px;
+    left: -58px;
+    width: 75px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.location-map-sm .location-tokyo {
+    top: 90px;
+    right: 72px;
+}
+.location-singapore {
+  top: 318px;
+  right: 285px;
+}
+.location-singapore .location-name {
+  bottom: 35px;
+  left: 35px;
+}
+.location-singapore .location-name:after {
+  bottom: -12px;
+  left: -34px;
+  width: 45px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.location-map-sm .location-singapore {
+  top: 142px;
+  right: 126px;
+}
+.location-map-sm .location-singapore .location-name {
+  bottom: 24px;
+  left: 24px;
+}
+.location-map-sm .location-singapore .location-name:after {
+  bottom: -10px;
+  left: -24px;
+  width: 30px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+
+
+
+
+
+.location-taiwan {
+  top: 237px;
+    right: 233px;
+}
+.location-taiwan .location-name {
+  bottom: 35px;
+  left: 35px;
+}
+.location-taiwan .location-name:after {
+  bottom: -12px;
+  left: -34px;
+  width: 45px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.location-map-sm .location-taiwan {
+  top: 142px;
+  right: 126px;
+}
+.location-map-sm .location-taiwan .location-name {
+  bottom: 24px;
+  left: 24px;
+}
+.location-map-sm .location-taiwan .location-name:after {
+  bottom: -10px;
+  left: -24px;
+  width: 30px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+
+
+
+
+.location-india {
+      top: 212px;
+    right: 314px;
+}
+.location-india .location-name {
+  bottom: 35px;
+  left: 35px;
+}
+.location-india .location-name:after {
+  bottom: -12px;
+  left: -34px;
+  width: 45px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.location-map-sm .location-india {
+  top: 142px;
+  right: 126px;
+}
+.location-map-sm .location-india .location-name {
+  bottom: 24px;
+  left: 24px;
+}
+.location-map-sm .location-india .location-name:after {
+  bottom: -10px;
+  left: -24px;
+  width: 30px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.location-sydney {
+       bottom: 137px;
+    right: 114px;
+}
+.location-sydney .location-name {
+    bottom: 50px;
+    left: 50px;
+}
+.location-sydney .location-name:after {
+    bottom: -22px;
+    left: -58px;
+    width: 75px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.location-map-sm .location-sydney {
+    bottom: 44px;
+    right: 36px;
+}
+.location-saudia .location-name,
+.location-seattle .location-name {
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right;
+}
+.location-Jordan .location-name {
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right;
+}
+.location-uk .location-name {
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right;
+}
+.location-Netherlands .location-name {
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right;
+}
+.location-Algeria .location-name {
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right;
+}
+.location-Mauritania .location-name {
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right;
+}
+.location-Johannesburg .location-name {
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right;
+}
+.location-Burundi .location-name {
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right;
+}
+.location-morocco .location-name {
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+}
+.location-Senegal .location-name {
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+}
+.location-Gabon .location-name {
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+}
+.location-egypt .location-name {
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+}
+.location-congo .location-name {
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+}
+.location-djibouti .location-name {
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+}
+.location-jebelAli .location-name {
+    -webkit-transform-origin: bottom center;
+    transform-origin: bottom center;
+}
+.location-Bahrain .location-name {
+    -webkit-transform-origin: bottom center;
+    transform-origin: bottom center;
+}
+.location-atlanta .location-name,
+.location-dubai .location-name {
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+}
+.location-miami .location-name,
+.location-oman .location-name {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+}
+.location-kenya .location-name {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+}
+.location-Tanzania .location-name {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+}
+.location-zambia .location-name {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+}
+@media (max-width: 1199px) {
+     .location-seattle .location-name {
+        bottom: 54px;
+        right: -26px;
+    }
+    .location-tokyo .location-name {
+        left: auto;
+        right: 50px;
+    }
+    .location-sydney .location-name {
+        left: auto;
+        right: 50px;
+    }
+    .location-tokyo .location-name:after,
+    .location-sydney .location-name:after {
+        left: auto;
+        right: -58px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    .location-seattle .location-name:after {
+        right: 3px;
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+@media (min-width: 568px) and (max-width: 767px) {
+    .location-map-lg .location-name {
+        height: 36px;
+        font-size: 20px;
+        line-height: 36px;
+    }
+}
+@media (max-width: 567px) {
+.blackClr{
+    background: transparent !important;
+    color: black !important;
+}
+.black:after{
+    background: #00000059 !important;
+}
+.black-pin, .black-pin:after{
+    background-color: black!important;
+
+}
+
+
+    .location-name span{
+        white-space: normal;
+    }
+    .location-map-lg .location {
+        position: inherit;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        float: left;
+        height: auto;
+        width: 50%;
+    margin-bottom: 8px;
+        padding-left: 30px;
+
+    }
+    .location-map-lg .location:after,
+    .location-map-lg .location:before {
+        display: block;
+        content: "";
+        clear: both;
+    }
+    .location-map-lg .location-pin {
+        position: absolute;
+        left: 0;
+        top: 4px;
+        margin: 5px 10px 5px;
+    }
+    .location-map-lg .location .location-name {
+        position: inherit;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        display: inline-block;
+        background: transparent;
+        color: #616366;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -ms-box-shadow: none;
+        -o-box-shadow: none;
+        box-shadow: none;
+    }
+    .location-map-lg .location .location-name > span {
+        position: inherit;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        display: inline-block;
+        background: transparent;
+        color: #e00000;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -ms-box-shadow: none;
+        -o-box-shadow: none;
+        box-shadow: none;
+    }
+    .location-map-lg .location-name:after {
+        display: none;
+    }
+    .section-dark .location-map-lg .location .location-name span {
+        color: #fff;
+    }
+}
